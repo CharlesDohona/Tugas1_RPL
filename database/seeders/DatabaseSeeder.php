@@ -15,9 +15,9 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::factory(10)->create();
 
         \App\Models\User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-            'password' => bcrypt('test@example.com')
+            'name' => 'Charles',
+            'email' => 'test@charles.com',
+            'password' => bcrypt('test@charles.com')
         ]);
         DB::table('kategori')->insert([
             'nama_kategori' => 'Nasional'
